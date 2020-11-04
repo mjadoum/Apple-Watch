@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/db676e76a0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+    <title>Apple|Watch</title>
+    <style>
+    body{
+     background-color: #c59f92;
+     }
+     header{
+      padding-top: 15px;
+     }
+    .navbar-brand{
+      margin-right: 17%;
+      margin-left: 2%;
+      font-size: 25px;
+      color:#c59f92;
+     font-family: 'Actor', sans-serif;
+     }
+     .navbar-brand:hover{
+         color:#eccbc2;
+     }
+    .nav-head{
+     
+        margin-right: 30px;
+        color:black;
+        padding-top: 40px;
+        border-radius: 0px 0px 5px 5px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: -26px;
+        font-family: 'Actor', sans-serif;
+    }
+    .nav-head:hover{
+       padding-top: 40px;
+       border-radius: 0px 0px 5px 5px;
+       background-color: #c59f92;
+       color:white;
+    }
+     .nav-head-icon-search{
+     border-radius:5px;
+       margin-right: 30px;
+        color: black;
+         font-weight: 400;
+        font-size: 13px;
+         font-family: 'Actor', sans-serif;
+margin-left: 150px;
+    }
+    .nav-head-icon-search:hover{
+      border-radius: 5px;
+       background-color:  #23283c;
+       color: white;
+    }
+    .nav-head-icon{
+       border-radius:5px;
+       margin-right: 30px;
+        color: black;
+         font-weight: 400;
+        font-size: 13px;
+         font-family: 'Actor', sans-serif;
+    }
+    .nav-head-icon:hover{
+        border-radius: 5px;
+       background-color:  #c59f92;
+       color: white;
+    }
+    
+  
+    .container{
+        margin-top:5%;
+    }
+    .small-p-left{
+       font-size:8px;
+       padding-left: 8.5%;
+       font-weight: 800;
+       font-family: 'Paytone One', sans-serif;
+    }
+    .find{
+         padding-left: 25px;
+        padding-right: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-left: 1%;
+         border-color:#c59f92;
+    }
+    .find:hover{
+        background-color: #c59f92;
+      border-color:#c59f92;
+    }
+    .btn-sm{
+        margin-top:2%;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 7px;
+    }
+    .first{
+        margin-left: 15%;
+         padding-left: 25px;
+        padding-right: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+         border-color: #eccbc2;
+        color: black;
+        background-color:#eccbc2;
+    }
+    .first:hover{
+      background-color: #c59f92;
+      border-color:#c59f92;
+    }
+    .see-spaces{
+      margin-left: -15%;
+         padding-left: 25px;
+        padding-right: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-style: none;
+         color: black;
+    
+        background-color: #eccbc2;
+    }
+    .see-spaces:hover{
+      background-color: #c59f92;
+      border-color:#c59f92;
+      color: white;
+    }
+    .h1-left{
+        font-size:70px;
+         text-align: left;
+         padding-left: 15%;
+         margin-top: -7%;
+         font-weight: 600;
+         font-family: 'Actor', sans-serif;
+    }
+    .p-left{
+      padding-top: 10px;
+      font-size: 10px;
+       padding-left: 15%;
+       width: 67%;
+       font-family: 'Actor', sans-serif;
+    }
+    .p-footer{
+      text-align: center;
+      font-size: 12px;
+       font-family: 'Actor', sans-serif;
+       margin-top: 5%;
+    }
+    .btn-primary{
+        background-color: hotpink;
+        border-radius: 50%;
+        border-style: none;
+        font-size: 14px;
+        
+    }
+     .btn-primary:hover{
+        background-color:mediumvioletred;
+        border-radius: 100%;
+        border-style: none;
+        font-size: 14px;
+        box-shadow:  0px 0px 3px 3px pink;
+    }
+    
+    .smal-cont{
+    background-color: white;
+     background-size: cover;
+     background-position: center;
+     box-shadow:0px 0px  15px 0px gray;
+     border-radius: 15px;
+     height: 530px;
+
+    }
+   
+    .red{
+      margin-top:7px;
+     background-color: #f24851;
+  width: 17px;
+  height:17px;
+  padding: 0px;
+  border-radius: 2px;
+ 
+    }
+    .black{
+      margin-top: 7px;
+     background-color: #f8d7ce;
+  width: 17px;
+  height:17px;
+  padding: 0px;
+  border-radius: 2px;
+   margin-left: -10px;
+    }
+    .navy{
+      margin-top: 7px;
+     background-color: #23283c;
+  width: 17px;
+  height:17px;
+  padding: 0px;
+  border-radius: 2px;
+   margin-left: -10px;
+    }
+    .black1{
+      margin-top: 7px;
+     background-color: #34302f;
+  width: 17px;
+  height:17px;
+  padding: 0px;
+  border-radius: 2px;
+   margin-left: -10px;
+    }
+    .black1:hover{
+       border: 1px solid white;
+  
+    }
+    .red:hover{
+  border: 1px solid white;
+  
+    }
+     .black:hover{
+  border: 1px solid white;
+  
+    }
+     .navy:hover{
+  border: 1px solid white;
+  
+    }
+    .select-color{
+      margin-left: 11%;
+      
+    }
+    .h1-select{
+      color: black;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .img-watch{
+      width:85%;
+      margin-top: -30px;
+     
+    }
+    .ul-order{
+      margin-top: 45%;
+      margin-left: -30%;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #c59f92;
+      list-style-type: circle;
+      margin-bottom: 38%;
+    }
+    @media only screen and (max-width: 720px) {   
+     .navbar-brand{
+        font-family: 'Paytone One', sans-serif;
+      margin-left:5%;
+      margin-right: 0%;
+      font-size: 27px;
+       color:#c59f92;
+     }
+   
+     .nav-head{
+
+        color:black;
+        font-size: 15px;
+        font-weight: 400;
+       
+        font-family: 'Actor', sans-serif;
+    }
+    .nav-head:hover{
+       color:black;
+       font-size: 16px;
+       background-color: unset;
+    }
+    .nav-head-icon{
+       border-radius:5px;
+       margin-right: 30px;
+        color: black;
+         font-weight: 400;
+        font-size: 15px;
+         font-family: 'Actor', sans-serif;
+    }
+    .nav-head-icon-search{
+       border-radius:5px;
+       margin-right: 30px;
+        color: black;
+         font-weight: 400;
+        font-size: 15px;
+         font-family: 'Actor', sans-serif;
+margin-left: 0px;
+    }
+    .nav-head-icon-search:hover{
+       background-color: unset;
+        font-size: 16px;
+       color: black;
+    }
+    .nav-head-icon:hover{
+        background-color: unset;
+        font-size: 16px;
+       color: black;
+    }
+    .h1-left{
+        font-size:80px;
+         text-align: center;
+         padding-left: 0%;
+         font-weight: 600;
+         
+         padding-top: 10px;
+         font-family: 'Actor', sans-serif;
+    }
+    .p-left{
+      padding-top: 10px;
+      font-size: 20px;
+      text-align: center;
+       padding-left:5%;
+       width: 90%;
+       font-family: 'Actor', sans-serif;
+    }
+    .smal-cont{
+       background-color: linen;
+     background-size: cover;
+     background-position: center;
+     box-shadow:0px 0px  15px 0px gray;
+    
+       border-radius: 15px;
+       height:1400px;
+       width: 95%;
+       margin-bottom: 15px;
+    }
+   
+    .first{
+        margin-left:22%;
+    }
+    .red{
+      margin-top:7px;
+     background-color: #f24851;
+  width: 25px;
+  height:25px;
+  padding: 0px;
+  border-radius: 2px;
+     margin-left:-60%;
+ 
+    }
+    .black{
+      margin-top: -63%;
+     background-color: #f8d7ce;
+   width: 25px;
+  height:25px;
+  border-radius: 2px;
+   margin-left:0%;
+    }
+    .navy{
+      margin-top: -87%;
+     background-color: #23283c;
+  width: 25px;
+  height:25px;
+  padding: 0px;
+  border-radius: 2px;
+   margin-left: 60%;
+    }
+    .black1{
+       margin-top: -111%;
+     background-color: #34302f;
+  width: 25px;
+  height:25px;
+  padding: 0px;
+  border-radius: 2px;
+   margin-left:120%;
+    }
+    .select-color{
+      margin-left:31%;
+      margin-top:00%;
+      text-align: center;
+      font-size: 17px;
+      
+    }
+     .h1-select{
+      color: black;
+      font-size: 12px;
+      margin-left:0px;
+      font-weight: 600;
+    }
+    .img-watch{
+      width:85%;
+      margin-top: -65em;
+      margin-left: 5%;
+    }
+    .ul-order{
+      margin-top: -14.5em;
+      margin-left: 15%;
+      font-size: 1.5em;
+
+      font-weight: 500;
+
+      line-height: 50px;
+      margin-bottom: 38%;
+      color: #c59f92;
+      list-style-type: circle;
+    }
+     .find{
+         padding-left: 25px;
+        padding-right: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-left: 1%;
+          border-color:#c59f92;
+    }
+    .find:hover{
+        color: white;
+        background-color: #c59f92;
+      border-color:#c59f92;
+    }
+    .btn-sm{
+        margin-top:190%;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 7px;
+    }
+    .first{
+        margin-left: 15%;
+         padding-left: 25px;
+        padding-right: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+         background-color:#eccbc2;
+    }
+    .first:hover{
+        background-color: #c59f92;
+      border-color:#c59f92;
+    }
+    .see-spaces{
+      margin-left: 30%;
+      margin-top: -14em;
+         padding-left: 25px;
+        padding-right: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+      background-color:#eccbc2;
+    }
+    .see-spaces:hover{
+       background-color: #c59f92;
+      border-color:#c59f92;
+    }
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="container smal-cont">
+    <header>
+        
+        <nav class="navbar navbar-expand-lg ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <a class="navbar-brand" href="#"><i class="fab fa-apple"></i>Watch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <i class="fas fa-shopping-bag"></i>
+     
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link nav-head" href="#">Watches<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-head" href="#">Smart Phones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-head" href="#">TV Appliances</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link nav-head" href="#" >Laptops</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link nav-head-icon-search" href="#" ><i class="fas fa-search"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  nav-head-icon" href="#"><i class="fas fa-shopping-bag"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-head-icon" href="#"><i class="fab fa-app-store"></i></a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+    </header>
+    <main>
+        <div class="container">
+         <div class="row">
+          <div class="col-sm-12 col-lg-6 left">
+           <h1 class="h1-left">Smart</h1>
+           <h1 class="h1-left">Watch</h1>
+           <p class="p-left">They’re the childdqwhood friend that knows your highest highs and lowest lows. They’ve been with you through thick and thin and they’re the best at keeping secrets. .</p>
+         
+            <nav class="navbar navbar-expand-lg">
+         <ul class="navbar-nav select-color">
+           <li class="nav-item">
+              <a class="nav-link" ><span class="h1-select">Select Color</span></a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="red.html"><div class="red"></div></a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="pink.html"><div class="black"></div></a>
+             </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="index.html"><div class="navy"></div></a>
+               </li>
+                <li class="nav-item">
+                <a class="nav-link" href="black.html"><div class="black1"></div></a>
+             </li>
+            </ul>
+  
+            </nav>
+           <button type="button" class="btn btn-dark btn-sm first">Add to Cart </button>
+           <button type="button" class="btn btn-outline-dark btn-sm find">£249</button>
+          </div>
+          <div class="col-sm-12 col-lg-4 right">
+            <img src="images/pink watch.png" alt="image" class="img-watch">
+          </div>
+          <div class="col-sm-12 col-lg-2 right">
+          <ul class="ul-order">
+            <li>Touch Screen</li>
+             <li>Bluetooth</li>
+              <li>4G Sim</li>
+               <li>Camera</li>
+          </ul>
+          <button type="button" class="btn btn-dark btn-sm see-spaces">See Spaces </button>
+         </div>
+        </div>
+         <footer>
+          <p class="p-footer">CopyRight 2020 by Mustafa Jadoun</p>
+        </footer>
+    </main>
+    
+   
+    
+    </div>
+</body>
+</html>
